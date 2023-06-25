@@ -1,0 +1,13 @@
+int removeDuplicates(int* nums, int numsSize)
+{
+    int* k = nums;
+    int* i;
+
+    for (i = nums + 1; i < nums + numsSize; i++) {
+        if (*i != *k) {
+            k++;
+            *k = *i;
+        }
+    }
+    return k - nums + 1;
+}
