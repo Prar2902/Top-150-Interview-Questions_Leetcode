@@ -16,5 +16,3 @@ class Solution:
                 result = sub + " " + result
             i = j+1
         return result
-
-s = str(input())
